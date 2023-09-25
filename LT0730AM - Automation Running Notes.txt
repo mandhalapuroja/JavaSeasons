@@ -1,0 +1,1173 @@
+Automation :
+
+for Web apps 
+
+Selenium (API) 
+
+
+Java / Python / C# / Ruby etc ..
+
+
+JAVA : 
+
+*******************************************
+Season -1 JAVA 
+Day 1 - 4th September 
+*******************************************
+
+1996 
+
+Features of Java : 
+
+
+1. Simple :
+
+- syntax is similar C++
+- removed most confusing topics like 
+explicit pointers and operator Overloading 
+
++ - * / % 
+
+2 +  5  = 7
+
++ is overloaded to find power 
+
+2 + 5 =  32
+- Garbage collector 
+-------------------------------------
+
+2. OOP (object Oriented ) 
+
+POP - Procedure Oriented Programming ( c, BASIC , FORTAN ,COBOL etc )
+OOP - Object Oriented Programming (c++ , Java , python etc ..)
+
+OOP is a methodology that simplifies s/w development and maintenance 
+by using some rules :
+
+ - Object
+ - Class
+ - Encapsulation
+ - Polymorphism
+ - Inhertiance 
+ - Abstraction 
+ 
+-------------------------------------
+
+3. Robust : 
+
+- Java uses Strong Mem mgnt
+
+- No pointers ==> avoid security problems 
+
+- Exception Handling Mechanism & Type Checking  Mechanism
+
+int i=10;
+
+String j="abc";
+
+int k=i+j;
+-----------------------------------------------
+4. Secured 
+ 
+5. Platform Independent
+
+Platform means OS 
+
+6. Architectural Neutral 
+
+Architecture means s/m config (MP) + RAM 
+
+7. Portable 
+
+means Architecture 
+
+base root or model 
+
+IBM 
+
+Apple
+
+SOLARIS 
+
+-----------------------------------------------------------------------
+
+JAVA  ( JSE  		/ JDK )  
+
+Group	Module		Physical Name
+Name	Name
+
+How to install JDK ?
+
+JDK 8 or JDK 11 (prefered)
+
+
+*******************************************
+Season -1 JAVA 
+Day 2 - 5th September 
+*******************************************
+
+Configuration of  Java : 
+
+Conveying or telling OS  where java is installed
+
+how to convey or configure ?
+
+Environment Variables :
+
+In User variables for your account : 
+
+Varibale name : JAVA_HOME
+
+Variable value : path of jdk 
+
+
+JAVA_HOME : path of jdk 
+
+In System varibales Section :
+
+there will be path variable existing , click on it and edit 
+Now click on New 
+
+and add the path till bin folder in jdk 
+
+how to check whether Java is configured or not ?
+
+
+go to command prompt and give command 
+java -version
+
+C:\Users\Riyaz>java -version
+java version "11.0.20" 2023-07-18 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.20+9-LTS-256)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.20+9-LTS-256, mixed mode)
+
+
+
+										jdk folders
+						
+						
+						
+			lib						bin	/tools					jre
+
+
+Lib :  will have readymade/predefined java related programs 
+which will help in designing Java applictaions 
+
+								Lib
+							
+								|
+							
+				Collection of API's ( jars)
+				
+								|
+							
+				Collection of Packages ( similar  to folder) 
+							
+								|
+							
+				Classes 					Interfaces
+		 _________|______					 _____|______________
+		|				|					|					|
+	Varibales        methods			Constant			Abstract Methods
+										/ Fields
+				
+							
+					
+bin / tools :
+
+
+
+javac: to compile a java program 
+
+.java --> .class 
+
+syntax :  javac FileName.java
+
+java: to execute already compiled java file 
+
+syntax : java FileName							
+							
+
+*******************************************
+Season -1 JAVA 
+Day 3 - 6th September 
+*******************************************
+
+			
+JRE : 	Java Runtime Environment
+
+java tool triggers or starts JRE 
+
+
+
+								JVM (Java Virtual Machine)
+								
+								
+								
+			CLSS					EE							GC
+			
+			
+							Interpreter		JIT (Just in Time)
+											compiler
+											
+	
+
+CLSS : Class Loader Subsystem 
+
+- Loading
+- Linking
+- Initialization
+
+EE : Execution Engine 
+
+
+BC to MC
+
+byte code to Machine code
+
+line by line 
+
+
+JIT : looping (for ,while loops etc ) , this will help in faster execution
+
+
+GC : Garbage Collector 
+
+- Memory deallocation 
+
+Mark , Sweep 
+
+Runtime.gc();
+System.gc();
+
+
+*******************************************
+Season -1 JAVA 
+Day 4 - 7th September 
+*******************************************
+
+-----------------------------
+JAVA MEMORY BLOCKS
+-----------------------------
+1. Class Area / Method Area
+- .class files (programs)
+- static variables
+- static methods 
+
+2. Heap Area (dynamic memory allocation)
+
+- Objects 
+- arrays 
+
+3. Java Stack Area 
+
+- Local Declarations or Local Varibales
+- Expressions
+int i=10;
+int j=20;
+
+i+j 
+- current running logic /code 
+
+4. SCPA (String Constant pool Area)
+
+only String  Literals 
+
+
+String str="Live Tech";
+
+-----------------------------
+Structure of Java Program
+-----------------------------
+			
+4 Sections
+
+
+1. Documentation Section
+2. Package Section
+3. Import Section
+4. Class or Interface Section								
+
+
+1. Documentation Section :
+
+Comments Sections 
+
+2 ways 
+
+
+i) single line comment
+// 
+
+ii) multiline comments
+
+/* kjhkjhkjhkj
+hkjhkjhkjhkjhkj
+kuyiuyiuyuiyiyfggetr
+*/
+					
+2. Package Section
+
+for Logical grouping 
+
+package package-name;
+
+3. Import Section
+
+
+import package-name.*; ==> not prefered beacuse poor readability 
+
+import package-name.ClassName; ==> prefered 
+
+import static package-name.classname.*;
+
+
+java.lang ==> default package of java 
+
+there is no need of import statement for this 
+
+
+4. Class / Interface 						
+						
+access-specifier access-modifier class ClassName
+{
+
+
+//variables
+
+//methods
+
+
+}						
+						
+
+*******************************************
+Season -1 JAVA 
+Day 5 -8th September  - Friday
+*******************************************						
+
+4. Class / Interface 						
+						
+access-specifier access-modifier class ClassName
+{
+
+
+//variables
+
+//methods
+
+
+}						
+	
+access-specifier : 
+
+this will tell the access label 
+
+public or private or protected or <default> 
+
+
+access-modifier : 
+
+this tells the behaviour of class 
+
+static  or final or or <default> 
+
+-------------------------------------
+Naming Conventions in Java 
+-------------------------------------
+
+
+							Packages 
+							
+								|
+					------------------------------			
+					|							  |
+				Classes 					Interfaces
+		 _________|______					 _____|______________
+		|				|					|					|
+	Varibales        methods			Constant			Abstract Methods
+										/ Fields
+
+package : 
+
+all lower case 
+
+e.g : sep8th 
+	  regression
+	  java.util
+	  java.io
+	  org.openqa.selenium
+	  
+Classe /Interface  :  Title case 
+
+RamaKrishna
+
+e.g :  Hello
+	   PersonDemo
+	   Scanner
+	   HashMap
+	   ArrayIndexOutOfBounds
+	   
+Varibales/Objects : 	 Camel Case (Lower case + Title case)   
+
+int x=10
+
+String name="Riyaz"
+
+double netSalary=60000.00;
+
+costOfItem
+
+noOfLinks
+
+methods /Abstract Methods : Camel Case (Lower case + Title case)  
+
+methods will have ( 
+
+Constant/Fields : all Upper case 
+
+PI = 3.14;
+
+MAX_LIMIT=10000;
+
+--------------------------------------------------
+Variables in Java 
+
+							Variables
+							
+							
+			Local				Instance			Static
+
+
+
+Variables: 
+
+syntax :
+
+access-specifier access-modifier datatype variableName ; ==> variable declaration
+
+access-specifier access-modifier datatype variableName = value ; 	declaration and assignment		
+							
+1. Def	
+2. when 
+this variable is getting ?
+3. where 
+is memory alloacated ?
+4. what is calling style ?
+5. Scope of life time 	
+	
+---------------------------------------------------------------	
+Local Variable :
+
+1. 
+def : variable's which are declared inside a method 
+
+2. when 
+
+this variable is getting ?
+
+ans : when the method is called during execution 
+
+3. where 
+
+is memory alloacated ?
+
+ans : Java Stack Area 
+
+4. what is calling style ?
+
+just variableName
+
+
+5. scope or life time 
+
+till end of method 
+
+
+VariablesDemo1.java:15: error: variable y might not have been initialized
+System.out.println(y);
+                   ^
+1 error
+
+Note : for Local variable it's the programmers/developers reposponsibity to assign some value 
+
+
+*******************************************
+Season -1 JAVA 
+Day 6 -11th September  - Monday
+*******************************************						
+
+
+Instance Variable : 
+
+1. Def	
+
+Variable which is declared inside a class outside of method 
+
+2. when 
+this variable is getting memory?
+
+during object / instance creation 
+
+to create an object 
+
+ClassName objectName = new ClassName();
+
+3. where 
+is memory alloacated ?
+
+Heap Area 
+
+4. what is calling style ?
+
+objectName.variableName;
+
+5. Scope of life time 	
+	
+till the last usage of object in program 
+
+-------------------------
+Static Variable:
+
+1. Def	: 
+Variable which is declared inside a class outside of method  and having modifier/keyword static 
+
+2. when 
+this variable is getting ?
+
+during compile time 
+
+3. where 
+is memory alloacated ?
+
+class Area / Method Area 
+
+4. what is calling style ?
+
+ClassName.variableName
+
+5. Scope of life time 	
+
+till the end of program
+
+
+Need of static :
+
+when we have some data which is "common and can be shared " 
+
+
+-------------------------------------------------------------------
+
+Data Types in Java :
+
+1996 
+
+10
+
+		        8 4 2 1
+
+10		0 0 0 0 1 0 1 0
+
+3		0 0 0 0 0 0 1 1	
+
+
+int x=10;
+
+									Data Types in Java
+									
+							primitive (8)					non-primitive	 (objects , Arrays etc ..)		
+									
+									
+					boolean			numeric
+
+	
+							character			Integral
+							
+										Integer				floating-point
+							
+					boolean	char	byte short int long 	float  double
+							
+Range formula : 
+
+			 n-1		n-1
+		-	2     to + 2   - 1
+		
+for byte 
+			7		  7
+		- 2		to + 2 -1
+		
+	    - 128 to + 127
+
+		
+*******************************************
+Season -1 JAVA 
+Day 7 -12th September  - Tuesday
+*******************************************				
+
+Eclipse : IDE (Integrated Development Environment) 
+
+many IDE's like Eclipse , Intellij Idea , net beans , VScode etc ..											
+							
+how to download eclipse ?
+
+https://www.eclipse.org/downloads/
+
+Eclipse 2021-09 (4.21) or https://www.eclipse.org/downloads/packages/release/2021-09/r
+
+Eclipse IDE for Enterprise Java and Web Developers
+
+Click on below : 
+
+Windows x86_64
+
+a zip file will get downloaded 
+
+*******************************************
+Season -1 JAVA 
+Day 8 -13th September  - Wednesday
+*******************************************	
+									
+-------------------------------
+Methods in Java 
+
+
+								methods
+
+				non-static					static 
+				
+				
+MEthod : set of statements or instructions to complete some task 
+
+
+Need of methods : 
+
+- reusabilty 
+
+- decreases code redundancy 
+
+- increase code clarity 
+
+- easy code debugging 
+			
+syntax : 
+
+
+access-specifier access-modifier return-type methodName(paramters or arguments)
+{
+
+// local declarations
+
+//statements 
+
+return statement;  
+
+}
+
+--------------------
+Non-static Methods
+---------------------								
+1. Def	:
+
+Methods declared or defined without static keyword 
+
+<default> , abstract , transient , volatile etc ..
+
+2. when 
+
+this method is getting memory ?
+
+during object / instance creation 
+
+to create an object 
+
+ClassName objectName = new ClassName();
+
+3. where 
+
+is memory alloacated ?
+
+Heap Area 
+
+
+4. what is calling style ?
+
+objectName.methodName();
+
+5. Scope of life time 
+
+till the last usage of object in program 										
+									
+--------------------
+Static Methods
+---------------------								
+1. Def	
+
+Methods declared or defined with static keyword
+
+2. when 
+this methods is getting ?
+
+during .class file loading 
+
+3. where 
+is memory alloacated ?
+
+Class Area /Method Area
+
+4. what is calling style ?
+
+ClassName.methodName();
+
+5. Scope of life time 										
+															
+till the end of program									
+									
+???????????????????????????????
+Write 2 programs 
+
+1. use non-static method to calculate 
+Simple Interest 
+
+SI = P * T * R /100;
+
+2. use static method to calculate 
+Simple Interest 
+				
+???????????????????????????????				
+									
+*******************************************
+Season -1 JAVA 
+Day 9 -14th September  - Thursday
+*******************************************		
+
+OOP : Object Oriented Programming 
+
+before OOP , we use to have POP Procedure Oriented Programming
+
+
+Object 
+
+Class 
+
+Encapsulation
+
+Polymorphism
+
+Inhertiance
+
+Abstraction		
+
+----------------------------------
+----------------------------------
+Object : 	
+
+anything that exists is an object 
+
+e.g : dog , Marker  , Fan , bank account number etc ...	
+
+3 characteristics :
+--------------------
+State : data or attributes which represents object 
+--------------------
+nothing but variables 
+
+for Marker : shape = cyclindrical , color= white , length = 12cm
+-----------------
+Behaviour: the actions that object can perform 
+------------------
+for Dog : Eating , Sleeping , barking etc ..
+
+nothing but Methods
+
+Identity:			
+
+a unique ID used by JVM to identify the object 
+
+----------------------------------
+----------------------------------
+Class 
+
+A template or blue print from which you can create object 
+
+*******************************
+Object Creation Techniques
+********************************
+
+1. using new operator 
+
+syntax :  ClassName objectName= new ClassName();
+
+
+2. using Static Factory Method 
+
+syntax :  ClassName objectNAme=ClassName.methodName();
+
+e.g  By class in Selenium , static id(),name,classname,xpath etc ..
+
+                By obj=By.id();
+
+3. using non-static Factory Method 
+
+syntax : 
+
+		ClassName1 object1=new ClassName1();
+		
+		ClassName2 object2=object1.methodName();
+		
+		XSSFWorkbook 
+		XSSFSheet
+		XSSFWorkbook wb=new XSSFWorkbook();
+		XSSFSheet ws=wb.getSheet();
+		
+4. using clone method 
+
+5. using String literals 
+
+String objectName="LiveTech" ;
+
+
+6.deserialization 
+
+(no syntax )
+
+used by JVM 
+
+
+									
+*******************************************
+Season -1 JAVA 
+Day 10 -15th September  - Friday 
+*******************************************	
+
+
+Encapsulation : 
+
+Encapsulation in Java is a process of wrapping code and data together into a single unit,
+ for example, a capsule which is mixed of several medicines.
+ 
+ 
+ Encapsulation = Data Hiding + Abstraction
+ 
+ to make tightly encapsulated , we will make variables or data as private 
+ 
+ The field Bank.balance is not visible
+ 
+ getters :
+ 
+ public methods in a class to retrive the private variable 
+ using some validation 
+ 
+ 
+ setters :
+ 
+ public methods in a class to modify / alter the private variables
+ 
+ 
+ 
+									
+*******************************************
+Season -1 JAVA 
+Day  -16th September  - Saturday 
+*******************************************	
+
+---------------------------------
+Operators in Java  
+---------------------------------
+
+Operator is special symbol and it performs particular task 
+
+						Operators
+				
+				
+		unary			binary				ternary
+
+						- arithmetic/mathematical
+						- relational operator
+						- logical operator
+						- bitwise operator
+						- Assignment operator
+						
+						
+unary operator : will be applied for one operand ( value or varibale )
+
+++ (increment)     -- (decrement)
+
+
+lets take an operand or variable a 
+
+							post        				pre 
+						
+						
+				increment  		decrement		increment  		decrement
+						
+				a++				a--				++a             --a 
+				
+				a=a+1			a=a-1			a=a+1			a=a-1
+				
+binary : use for two operands 				
+				
+arithmetic/mathematical : 
+
++ - *  /  %
+
++ means sum
+
+- means diff
+
+* means product
+
+/ means gives quotient
+
+% or modulus means gives remainder after division
+
+
+Relational operator : comparision between two things  and gives output in boolean value (true or false)  
+
+
+>   	  <   	>= 					 <=   		==  		!=
+
+greater  less   greater than   less than 	 equals 		Not equals 
+than	 than   or equals      or equal
+
+
+logical operator : b/n two or more comparisons 
+
+&&     ||    !
+
+Enter some value for x 
+
+x 
+
+x>0 && x<10		
+				
+bitwise operator : 
+
+&  |   ~  >>    <<  				
+
+
+Assignment operator : 
+
++= -= *=  /=  %=  
+
+int x=10;
+
+x+=1
+ternary operators : Conditional Operator
+
+?:  --> altrnate for if condition
+
+syntax :
+
+expression 1 	?   expression 2 : expression 3
+
+conditional/        true part		false part 
+comparision
+
+									
+*******************************************
+Season -1 JAVA 
+Day  -20th September  - Wednesday 
+*******************************************	
+
+
+-------------------------------------
+2. Polymorphism
+-------------------------------------
+
+Poly means many
+
+morphism means forms 
+
+
+operators or methods 
+
+
+
+	The method add(int, int) in the type Sum is not applicable for the arguments (double, double)
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	The method add(int, int) in the type Sum is not applicable for the arguments (double, double)
+
+	at sep20th.SumDemo.main(SumDemo.java:11)
+
+
+The method add(int, int) in the type Sum is not applicable for the arguments (long, long)
+
+
+without polymorphism 
+
+	public void add(int x, int y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+   public void addDouble(double x,double y)
+   {
+	   System.out.println("Sum is "+(x+y));
+   }
+   
+   public void addLong(long x,long y)
+   {
+	   System.out.println("Sum is "+(x+y));
+   }
+
+
+
+--------------------------------------------------------
+with polymorphism
+
+	public void add(int x, int y)
+	{
+		System.out.println("Sum is "+(x+y));
+	}
+	
+   public void add(double x,double y)
+   {
+	   System.out.println("Sum is "+(x+y));
+   }
+   
+   public void add(long x,long y)
+   {
+	   System.out.println("Sum is "+(x+y));
+   }
+
+----------------------------------------------------------------
+
+									Polymorphism
+									
+									
+				static											dynamic  ( will be discussed after inheritance topic)
+					or											  or
+				compile time									Runtime	
+					or											   or
+				Early Binding									Late Binding	
+									
+									
+Static Polymorphism:
+
+can be achived by 
+
+operator overloading (java doesn't support)
+
+or
+
+method overloading 
+
+Method Signature = MethodName + paramters or arguments
+
+In Method overloading ,
+
+Same class will have two  or many methods having same name 
+but different signatures
+
+Method overloading  -- Methods having same method name  with  different data types 
+					-- Methods having same method name  with  variance in no of arguments
+					-- Methods having same method name  with  change in order of arguments ( not prefered )
+		
+---------------------------------------
+
+for Clock
+
+user just sets hr = 8 
+
+08:00:00
+
+user just sets hr = 8 , min = 4
+
+08:04:00
+
+user just sets hr = 8 , min = 4 , sec = 50
+
+08:04:50
+
+In PrintStream  ( java.io) there are 4 methods for printing 
+
+
+println : this will print on console and moves the cursor to next line 
+
+print : this will print on console and  the cursor stays in the same line 
+
+* * * * *
+* * * *
+* * *
+* * 
+* 
+
+
+printf: came from older lang (c lang )
+
+8:0:0
+
+but i need 08:00:00
+
+printf(String, Object...)
+
+format : same as printf 
+
+????????????????????????????????????
+Assignment
+
+
+set Date 
+
+date mon year 
+
+2 10 1869 
+
+02-10-1869
+
+
+5 11 55
+
+05-11-0055
+
+??????????????????????????????????????
+
+*******************************************
+Season -1 JAVA 
+Day  -21st September  - Thursday 
+*******************************************	
+
+------------------------
+Constructor 
+-------------------------
+
+def : a method having same name as Class Name 
+
+syntax :
+
+access-specifier methodName()
+{
+// statements
+}
+
+Rules for Constructor :
+
+1. Constructor should have name same as class name (case Sensitive)
+2. Constructor shouldn't have return-type 
+Q ?  what happens if we have return-type for constructor 
+Ans : No error . it will be treated as normal method
+
+3. Constructor shouldn't have access-modifier
+
+Q ? what happens if we have access-modifier
+Ans : compilation error 
+Illegal modifier for the constructor in type Sample; only public, protected & private are permitted
+
+					
+							Constructor
+					
+					
+			default Constructor						paramterized constructor
+				or
+			non-paramterized	
+					
+					
+					
+
+Constructor overloading :
+
+
+-------------------------
+3. Inhertiance
+-------------------------
