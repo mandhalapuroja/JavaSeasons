@@ -1171,3 +1171,109 @@ Constructor overloading :
 -------------------------
 3. Inhertiance
 -------------------------
+
+*******************************************
+Season -1 JAVA 
+Day  -25th September  - Monday 
+*******************************************	
+
+Types of inheritance :
+
+1. Single or simple
+2. Multi level 
+3. Hiererichal 
+4. Multiple
+5. Hybrid 
+
+
+Object : is class which is parent/root of all classes 
+
+--------------------------------
+Method Overriding :
+
+Method Signature : methodName + arguments 
+
+*******************************************
+Season -1 JAVA 
+Day  -26th September  - Tuesday 
+*******************************************	
+
+		// case 1 
+		
+		P obj=new P();
+		
+		System.out.println(obj.x);
+		
+		obj.m1(); 
+		
+		o/p: 
+		10
+		This is P's m1 method
+		
+		
+		//case 2
+		
+		C obj=new C();
+		
+		System.out.println(obj.x); 
+		
+		obj.m1();
+		
+		o/p :
+		
+		20
+		This is C's m1 method 
+		
+		//case 3
+		
+		P obj=new C();
+		
+		System.out.println(obj.x); 
+		
+		obj.m1();
+		
+		o/p: 
+		
+		10
+		This is C's m1 method 
+
+		//case 4
+		
+		C obj=new P();  ==> is invalid 
+		
+		
+--------------------------------
+4. Abstraction 
+
+
+Abstract 
+
+very high level idea and no implementation details 	
+
+								Abstraction
+								
+								
+								
+			Abstract Class							Interface
+
+			0 to 100 %								100 % 
+								
+
+syntax :
+
+
+method having no body 
+
+access-specifier abstract return-type methodName(arguments);
+
+if there is atleast one abstract method in a class , that class becomes an abstract
+
+Note: 
+for Abstract class , we can't create an object 
+
+Cannot instantiate the type Numbers
+
+
+			
+
+	
