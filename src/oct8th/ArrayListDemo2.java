@@ -26,6 +26,7 @@ public class ArrayListDemo2 {
 		//al.add("Live Tech");
 		System.out.println(al.size());
 		
+		
 				
 		/*
 		 * System.out.println(al.get(0)); System.out.println(al.get(1));

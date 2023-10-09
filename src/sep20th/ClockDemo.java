@@ -15,6 +15,7 @@ public class ClockDemo {
 		
 		c1.setClock(8, 16, 55);
 		
+			
 		c1.getClock();
 		
 		
